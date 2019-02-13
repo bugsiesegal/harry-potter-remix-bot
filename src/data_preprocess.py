@@ -1,4 +1,7 @@
-
+from numpy import argmax
+from numpy import array
+from numpy import argmax
+from keras.utils import to_categorical
 
 def loaddata(path, numbooks):
 # basicly just joins all of the books together
@@ -11,3 +14,28 @@ def loaddata(path, numbooks):
 def remove_impuritys(books):
 #the name says it all it takes the bad things and grinds them up we leave the good things intact
     return books.replace("\n","").lower()
+def one_hot_encode(books,vocab):
+    # One hot encodes what is put into it
+    # define input string
+    data = books
+    # define universe of possible input values
+    alphabet = vocab
+    print(len(alphabet))
+    # define a mapping of chars to integers
+    char_to_int = dict((c, i) for i, c in enumerate(alphabet))
+    int_to_char = dict((i, c) for i, c in enumerate(alphabet))
+    # integer encode input data
+    integer_encoded = [char_to_int[char] for char in data]
+    # define example
+    data = integer_encoded
+    data = array(data)
+#     print(data.shape)
+#     print(data)
+    # one hot encode
+    encoded = to_categorical(data,num_classes=len(vocab))
+    return encoded
+def one_hot_decode(one_hot_encode, vocab):
+    alphabet=vocab
+    inverted = argmax(one_hot_encode)
+    int_to_char = dict((i, c) for i, c in enumerate(alphabet))
+    return int_to_char[int(inverted)]
