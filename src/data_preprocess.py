@@ -39,3 +39,13 @@ def one_hot_decode(one_hot_encode, vocab):
     inverted = argmax(one_hot_encode)
     int_to_char = dict((i, c) for i, c in enumerate(alphabet))
     return int_to_char[int(inverted)]
+def number_encode(vocab,data):
+    characters = vocab
+    char_to_n = {char:n for n, char in enumerate(characters)}
+    listdata=list(data)
+    intdata=[]
+    for i in listdata:
+        intdata.append(char_to_n[i])
+    return intdata
+        
+        
