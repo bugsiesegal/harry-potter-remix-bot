@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c:contact c:Version="1" xmlns:c="http://schemas.microsoft.com/Contact" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:MSP2P="http://schemas.microsoft.com/Contact/Extended/MSP2P">
+	<c:CreationDate>2019-02-26T00:52:10Z</c:CreationDate><c:Extended xsi:nil="true"/>
+	<c:ContactIDCollection><c:ContactID c:ElementID="775e1f06-07c0-4c58-8756-ee54c1fa8d12"><c:Value>8a75041b-9f52-4c37-a0ec-2c1957a97d19</c:Value></c:ContactID></c:ContactIDCollection><c:NameCollection><c:Name c:ElementID="cb6e9e8f-fc9f-4e3f-ac0b-01c9ca847d18"><c:FormattedName>johnny deep</c:FormattedName><c:GivenName>johnny deep</c:GivenName></c:Name></c:NameCollection><c:PhotoCollection><c:Photo c:ElementID="5f6a1523-89f0-48d1-aaf8-2c4a16c9f6b6"><c:LabelCollection><c:Label>UserTile</c:Label></c:LabelCollection></c:Photo></c:PhotoCollection></c:contact>
