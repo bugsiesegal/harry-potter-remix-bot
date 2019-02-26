@@ -10,7 +10,7 @@ def loaddata(path, numbooks):
         with open(path+str(i+1)+".txt","r", errors='ignore') as f:
             books=books + f.read() + "\n" 
     return books
-	
+
 def remove_impuritys(books):
 #the name says it all it takes the bad things and grinds them up we leave the good things intact
     return books.replace("\n","").lower()
@@ -47,5 +47,21 @@ def number_encode(vocab,data):
     for i in listdata:
         intdata.append(char_to_n[i])
     return intdata
-        
-        
+def predict_text(model, X):
+    string_mapped = X
+    full_string = [n_to_char[value] for value in string_mapped]
+    # generating characters
+    for i in range(1000):
+        x = np.reshape(string_mapped,(1,len(string_mapped), 1))
+        x = x / float(len(characters))
+
+        pred_index = np.argmax(model.predict(x, verbose=0))
+        seq = [n_to_char[value] for value in string_mapped]
+        full_string.append(n_to_char[pred_index])
+
+        string_mapped.append(pred_index)
+        string_mapped = string_mapped[1:len(string_mapped)]
+    txt=""
+    for char in full_string:
+        txt = txt+char
+    print(txt)
