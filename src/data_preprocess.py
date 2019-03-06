@@ -47,7 +47,7 @@ def number_encode(vocab,data):
     for i in listdata:
         intdata.append(char_to_n[i])
     return intdata
-def predict_text(model, X):
+def predict_text(model, X, n_to_char):
     string_mapped = X
     full_string = [n_to_char[value] for value in string_mapped]
     # generating characters
