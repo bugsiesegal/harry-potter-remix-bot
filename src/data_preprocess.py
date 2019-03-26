@@ -2,7 +2,7 @@ from numpy import argmax
 from numpy import array
 from numpy import argmax
 from keras.utils import to_categorical
-
+import matplotlib as plt
 def loaddata(path, numbooks):
 # basicly just joins all of the books together
     books=""
