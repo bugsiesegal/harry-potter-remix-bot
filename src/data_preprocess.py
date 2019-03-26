@@ -65,3 +65,14 @@ def predict_text(model, X, n_to_char):
     for char in full_string:
         txt = txt+char
     print(txt)
+	
+
+def make_loss_graph(fitmodel):
+	history=fitmodel
+	plt.plot(history.history['loss'])
+	plt.plot(history.history['val_loss'])
+	plt.title('model loss')
+	plt.ylabel('loss')
+	plt.xlabel('epoch')
+	plt.legend(['train', 'test'], loc='upper left')
+	plt.show()
