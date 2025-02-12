@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+# Harry Potter Remix Bot 🪄
 
-You can use the [editor on GitHub](https://github.com/bugsiesegal/harry-potter-remix-bot/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Project Overview
+This is a text generation AI I created in 2019 when I was twelve years old, exploring my early interest in machine learning. While simple by current standards, it represents my first foray into neural networks and natural language processing.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Technical Details
+- **Architecture**: Simple LSTM (Long Short-Term Memory) neural network
+- **Training Data**: Text scraped from Harry Potter books (not included in repo)
+- **Training Duration**: Brief training period of a few minutes
+- **Implementation**: Basic character-level text generation
 
-### Markdown
+## Historical Context
+This project was developed in 2019, during the early days of accessible neural network implementations. While modern text generation has advanced significantly with transformers and large language models, this project represents an important stepping stone in my learning journey with AI.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Current Status
+⚠️ **Note**: This repository is preserved as a historical artifact of my early programming work. The model requires the Harry Potter books' text data which is not included due to copyright considerations.
 
-```markdown
-Syntax highlighted code block
+## Learning Outcomes
+Through this project, I gained hands-on experience with:
+- Basic neural network architectures
+- Text preprocessing and tokenization
+- Training simple language models
+- Working with sequential data
+- Basic PDF text extraction
 
-# Header 1
-## Header 2
-### Header 3
+## Future Work
+While I don't plan to actively maintain this project, some potential improvements could include:
+- Implementing a more modern architecture (e.g., transformers)
+- Using public domain text data
+- Adding proper documentation
+- Including sample outputs
 
-- Bulleted
-- List
+## Acknowledgments
+This project was inspired by my love for both Harry Potter and machine learning. While the implementation is basic by today's standards, it marks an important milestone in my journey as a programmer.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/bugsiesegal/harry-potter-remix-bot/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+---
+*This project is preserved as a snapshot of my early programming journey. Created in 2019.*
